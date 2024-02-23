@@ -30,7 +30,7 @@ while True:
     if timestamp >= 10:               #ends the pressure recording loop at set time limit (in seconds)
         break
     
-    timestamp = utime.ticksdiff(utime.ticks_ms(), start_time)/1000            #calculate the next timestamp
+    timestamp = utime.ticksdiff(utime.ticks_ms(), start_time)/1000            #calculate the next timestamp (in seconds)
     
     utime.sleep_ms(8)		#delay next reading by 8 ms to maintain microcontroller/sensor stability
     
